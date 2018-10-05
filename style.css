@@ -537,25 +537,25 @@ margin-bottom: 8px;
 }
 
 .turnament-content-block .name-row-block .number-title {
-	width: 91px;
+	width: 10.5%;
 	padding: 24px 0 19px 24px;
 	border-right: 1px #CCCCCC solid;
 }
 
 .turnament-content-block .name-row-block .command-title {
-	width: 428px;
+	width: 48.5%;
 	padding: 24px 0 19px 24px;
 	border-right: 1px #CCCCCC solid;
 }
 
 .turnament-content-block .name-row-block .players-title {
-	width: 181px;
+	width: 20.5%;
 	padding: 24px 0 19px 24px;
 	border-right: 1px #CCCCCC solid;
 }
 
 .turnament-content-block .name-row-block .points-title {
-	width: 181px;
+	width: 20.5%;
 	padding: 24px 0 19px 24px;
 }
 
@@ -573,7 +573,7 @@ margin-bottom: 8px;
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
-	width: 91px;
+	width: 10.5%;
 	padding: 14px 0 14px 24px;
 	border-right: 1px #CCCCCC solid;
 }
@@ -582,7 +582,7 @@ margin-bottom: 8px;
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
-	width: 428px;
+	width: 48.5%;
 	border-right: 1px #CCCCCC solid;
 	padding: 14px 0 14px 24px;
 }
@@ -595,7 +595,7 @@ margin-bottom: 8px;
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
-	width: 181px;
+	width: 20.5%;
 	border-right: 1px #CCCCCC solid;
 	padding: 14px 0 14px 24px;
 }
@@ -604,7 +604,7 @@ margin-bottom: 8px;
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
-	width: 181px;
+	width: 20.5%;
 	padding: 14px 0 14px 24px;
 }
 
@@ -747,7 +747,7 @@ margin-bottom: 8px;
 }
 
 .merch-wrap-content-block .product-block {
-	width: 434px;
+	width: 50%;
 	background-color: white;
 	margin-right: 16px;
 }
@@ -757,6 +757,8 @@ margin-bottom: 8px;
 }
 
 .product-block .product-img-block {
+	display: flex;
+	justify-content: center;
 	padding-bottom: 24px;
 }
 
