@@ -151,8 +151,11 @@
 }
 .main-block .main-slider .slider-descr .slider-descr-text {
 	height: 106px;
-	width: 651px;
 	font: bold 40px var(--main-font);
+	padding-right: 250px;
+	padding-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
 .main-block .main-slider .slider-controls {
@@ -692,10 +695,11 @@ margin-bottom: 8px;
 .youtube-wrap-content-block .main-video {
 	width: 100%;
 	padding-bottom: 16px;
+	position: relative;
 }
 
 .main-video .main-video-link {
-	position: relative;
+	
 }
 
 .main-video .main-video-link .main-video-link-text {
