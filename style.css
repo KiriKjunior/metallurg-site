@@ -26,6 +26,7 @@
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
+	padding-left: 248px;
 }
 
 .header-wrap .header-install {
@@ -35,13 +36,15 @@
 }
 
 .header-wrap .header-descr {
-	padding-left: 248px;
 	font: 14px var(--main-font);
 }
 
 .header-wrap .header-install .header-search {
-	padding-right: 21px;
-	cursor: pointer
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	margin-right: 21px;
+	padding: 0;
 }
 
 .header-wrap .header-install .change-lang {
@@ -56,6 +59,7 @@
 }
 
 .nav-wrap {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	-ms-align-items: center;
@@ -63,10 +67,14 @@
 	width: 100%;
 	height: 100px;
 	background-color: #E32013;
+	padding: 0 65px;
 }
 
 .nav-wrap .nav-menu {
-	padding-left: 248px;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	height: 100%;
 }
 
 .nav-wrap .nav-menu .nav-item {
@@ -86,7 +94,8 @@
 
 .nav-wrap .social-menu {
 	display: flex;
-	padding-right: 68px;
+	height: 100%;
+	align-items: center;
 }
 
 .nav-wrap .social-menu .social-icon {
@@ -122,9 +131,7 @@
 }
 
 .header-logo {
-	position: absolute;
-	top: 17px;
-	left: 68px;
+	margin-right: 40px;
 }
 
 .container {
@@ -132,37 +139,44 @@
 } 
 
 .main-block {
-	padding-top: 48px;
+	height: 830px;
 	display: flex;
-  justify-content: space-between;
+	justify-content: space-between;
+	padding-top: 48px;
+	margin-bottom: 40px;
 }
 
 .main-block .main-slider {
 	position: relative;
 	height: 100%;
-	padding-right: 16px;
+	flex: 1;
+	margin-right: 16px;
+	overflow: hidden;
 }
+
+.main-block .main-slider .slider-img img {
+	width: 100%;
+}
+
 .main-block .main-slider .slider-descr {
 	position: absolute;
 	background-color: white;
 	left: 120px;
-	top: 545px;
+	bottom: 125px;
 	border-left: 16px #E32013 solid;
+	padding: 20px 250px 15px 30px;
 }
+
 .main-block .main-slider .slider-descr .slider-descr-text {
 	height: 106px;
 	font: bold 40px var(--main-font);
-	padding-right: 250px;
-	padding-left: 30px;
-	margin-top: 20px;
-	margin-bottom: 15px;
 }
 
 .main-block .main-slider .slider-controls {
 	display: flex;
 	position: absolute;
 	left: 32px;
-	top: 774px;
+	bottom: 32px;
 }
 
 .main-block .main-slider .slider-controls .control {
@@ -181,8 +195,8 @@
 }
 
 .main-block .main-content {
-	flex: 1;
-	width: 25%;
+	display: flex;
+	flex-direction: column;
 }
 
 .next-mathes-slider {
@@ -309,37 +323,28 @@
 .statistic-wrap {
 	display: flex;
 	justify-content: space-between;
+	height: 240px;
 	background-color: #FFD04A;
-	margin-top: 40px;
-	margin-left: 68px;
-	margin-right: 68px;
-
+	margin: 0 68px 40px;
 }
 
 .statistic-wrap .statistic-block {
 	display: flex;
+	flex: 1;
 	-ms-align-items: center;
 	align-items: center;
+	justify-content: center;
 	margin-top: 33px;
 	margin-bottom: 33px;
 	border-right: 1px #BB9B3D solid;
 }
 
-.statistic-wrap .statistic-block:first-child {
-	padding-left: 73px;
-}
-
 .statistic-wrap .statistic-block:last-child {
-	padding-right: 73px;
 	border-right: none;
 }
 
-.statistic-block .statistic-block-text {
-	
-	padding-left: 32px;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	padding-right: 97px;
+.statistic-block .statistic-block-icon {
+	margin-right: 32px;
 }
 
 .viewers .statistic-block-text {
@@ -358,6 +363,7 @@
 
 .news-wrap {
 	width: 100%;
+	margin-bottom: 32px;
 }
 
 .news-wrap .news-wrap-header {
@@ -365,9 +371,10 @@
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
+	height: 50px;
 	background-color: #E32013;
-	margin-top: 40px;
-	padding: 12px;
+	padding: 0 12px;
+	margin-bottom: 8px;
 }
 
 .news-wrap .news-wrap-header .news-header-title-block .news-header-title {
@@ -385,12 +392,13 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 8px;
-	padding-bottom: 32px;
 }
 
 .news-content-wrap .news-content-block {
-	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
 	margin-right: 16px;
 	background-color: white;
 }
@@ -402,6 +410,11 @@
 .news-content-block .news-content-block-img {
 	display: flex;
 	justify-content: center;
+}
+
+.news-content-block .news-content-block-img img {
+	object-fit: cover;
+	width: 100%;
 }
 
 .news-content-wrap .news-content-block .news-content-block-text {
