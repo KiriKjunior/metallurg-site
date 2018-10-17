@@ -1,0 +1,16 @@
+{
+  "name": "myprogect",
+  "version": "1.0.0",
+  "description": "my first gulp progect",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "author": "kirik",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
